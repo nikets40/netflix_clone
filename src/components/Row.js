@@ -34,7 +34,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       console.log(movie);
      var type = (movie?.release_date==null) ? "tv" : "movie";
      async function getTrailerData(){
-      const trailerData = await axios.get(`http://api.themoviedb.org/3/${type}/${movie.id}/videos?api_key=85044227745de1325521b8c38082ad74`);
+      const trailerData = await axios.get(`https://api.themoviedb.org/3/${type}/${movie.id}/videos?api_key=85044227745de1325521b8c38082ad74`);
       console.log(trailerData.data.results[0]?.key||"");
       setTrailerUrl(trailerData.data.results[0]?.key||"");
      }
