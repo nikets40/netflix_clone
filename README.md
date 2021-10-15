@@ -1,5 +1,6 @@
 ## Netflix Clone
 A Simple Netflix UI Clone build with React.js and TMDB API
+Check it out:- https://nikets40.github.io/netflix_clone/
 
 
 **
